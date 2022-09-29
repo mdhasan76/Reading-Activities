@@ -5,11 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react';
 
-const List = ({ subjects, time }) => {
-    // console.log(subjects)
+const List = ({ time }) => {
     const [breakTime, setBreakTime] = useState(0);
 
-    // const { studyTime } = subjects;
+    //get Localstorage data and set Break Time
     useEffect(() => {
         const storedTime = localStorage.getItem('break-time');
         if (storedTime) {
@@ -17,6 +16,8 @@ const List = ({ subjects, time }) => {
         }
     }, [])
 
+
+    //Break time set
     const addBreakTime = (time) => {
         localStorage.setItem('break-time', time);
         setBreakTime(time);
