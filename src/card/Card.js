@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ subject }) => {
+const Card = ({ subject, addList }) => {
     // console.log(subject)
     const { bookName, img, description, studyTime } = subject;
     return (
@@ -10,7 +10,7 @@ const Card = ({ subject }) => {
             <p className='text-gray-400'>{description}</p>
             <h3 className='font-medium my-2'> Time For study: {studyTime}Min
             </h3>
-            <button className='w-full bg-cyan-400 rounded-lg text-white font-medium py-2 my-2'>Add to Reading list</button>
+            <button className='w-full bg-cyan-400 rounded-lg text-white font-medium py-2 my-2' onClick={() => addList(studyTime)}>Add to Reading list</button>
         </div>
     );
 };

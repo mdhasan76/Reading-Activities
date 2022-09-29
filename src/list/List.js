@@ -3,7 +3,9 @@ import img from '../img/my-pic.JPG'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
-const List = () => {
+const List = ({ subjects, time }) => {
+    // console.log(subjects)
+    const { studyTime } = subjects;
     return (<aside>
 
         <div className='flex justify-start items-center'>
@@ -27,11 +29,11 @@ const List = () => {
 
         <div className=' bg-slate-200 flex justify-between p-3 rounded-lg text-lg my-5'>
             <p className='font-medium'>Exercise time </p>
-            <p className='text-slate-500'>200 second</p>
+            <p className='text-slate-500'>{time} min</p>
         </div>
         <div className=' bg-slate-200 flex justify-between p-3 rounded-lg text-lg my-5'>
             <p className='font-medium'>Break time </p>
-            <p className='text-slate-500'>15 second</p>
+            <p className='text-slate-500'>15 min</p>
         </div>
         <button className='w-full bg-cyan-400 rounded-lg text-white font-medium p-3 mt-4'>Activity Computed</button>
     </aside>

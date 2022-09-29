@@ -8,11 +8,17 @@ import { useEffect } from 'react';
 
 const Activities = () => {
     const [subjects, setSubjects] = useState([]);
+    const [time, setTime] = useState(0);
     useEffect(() => {
         fetch("activities.json")
             .then(res => res.json())
             .then(data => setSubjects(data));
-    }, [])
+    }, []);
+
+    const addList = (sTime) => {
+        // console.log(time)
+        setTime(sTime + time)
+    }
     return (
         <main>
             <div className='grid grid-cols-4'>
@@ -20,11 +26,11 @@ const Activities = () => {
                     <h3 className='text-3xl font-semibold text-cyan-400'> <FontAwesomeIcon icon={faBookOpenReader} /> DAILY STUDY ROUTIN</h3>
                     <h5 className='text-lg font-medium py-6'>Select Today's Subjects</h5>
                     <div className='grid grid-cols-3 gap-5'>
-                        {subjects.map(subject => <Card subject={subject}></Card>)}
+                        {subjects.map(subject => <Card subject={subject} addList={addList} key={subject.id}></Card>)}
                     </div>
                 </div>
-                <div className='py-8 px-8'>
-                    <List></List>
+                <div className='py-8 px-8 bg-neutral-50'>
+                    <List subjects={subjects} time={time}></List>
                 </div>
             </div>
         </main>
