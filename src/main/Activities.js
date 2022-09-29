@@ -21,11 +21,11 @@ const Activities = () => {
     }
     return (
         <main>
-            <div className='grid grid-cols-4'>
-                <div className='col-span-3 w-9/12 mx-auto my-20'>
+            <div className='grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4'>
+                <div className=' col-span-3 w-9/12 mx-auto my-20'>
                     <h3 className='text-3xl font-semibold text-cyan-400'> <FontAwesomeIcon icon={faBookOpenReader} /> DAILY STUDY ROUTIN</h3>
                     <h5 className='text-lg font-medium py-6'>Select Today's Subjects</h5>
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                         {subjects.map(subject => <Card subject={subject} addList={addList} key={subject.id}></Card>)}
                     </div>
                 </div>

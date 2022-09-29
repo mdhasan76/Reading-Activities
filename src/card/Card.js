@@ -4,7 +4,7 @@ const Card = ({ subject, addList }) => {
     // console.log(subject)
     const { bookName, img, description, studyTime } = subject;
     return (
-        <div className='border-2  p-3 rounded-xl relative'>
+        <div className='border-2  p-3 rounded-xl relative '>
             <div><img className='rounded-xl' src={img} alt="" /></div>
             <h2 className='text-[20px] py-2 font-semibold'>{bookName}</h2>
             <p className='text-gray-400'>{description}</p>
