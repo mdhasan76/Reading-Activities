@@ -1,0 +1,38 @@
+[
+    {
+        "bookName": "Math",
+        "description": "Math is important.revise previous days lesson in 5 minutes",
+        "img": "https://i.ibb.co/0h4MmwQ/math.jpg",
+        "studyTime": 45
+    },
+    {
+        "bookName": "English",
+        "description": "English is important for every time of life.revise previous days lesson in 5 minutes",
+        "img": "https://i.ibb.co/R9JSTfh/english.jpg",
+        "studyTime": 60
+    },
+    {
+        "bookName": "Islam",
+        "description": "Islam is important for every time of life.Learn and Practice every steps of life",
+        "img": "https://i.ibb.co/Hx8wHMg/islam.jpg",
+        "studyTime": 30
+    },
+    {
+        "bookName": "Science",
+        "description": "This is Modern science world .complate 1 lession every day",
+        "img": "https://i.ibb.co/f4f5ZrP/science.jpg",
+        "studyTime": 40
+    },
+    {
+        "bookName": "Social",
+        "description": "Social is important.revise previous days lesson in 5 minutes",
+        "img": "https://i.ibb.co/NTqWnzg/social.jpg",
+        "studyTime": 45
+    },
+    {
+        "bookName": "Ict",
+        "description": "This time is ICT globalization. know world. learn programing.",
+        "img": "https://i.ibb.co/phCwdzW/ict.jpg",
+        "studyTime": 25
+    }
+]
