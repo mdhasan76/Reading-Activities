@@ -10,7 +10,7 @@ const Card = ({ subject, addList }) => {
             <p className='text-gray-400'>{description}</p>
             <h3 className='font-medium my-2 mb-12'> Time For study: {studyTime}Min
             </h3>
-            <button className='w-[90%] mx-auto my-[10px] bg-cyan-400 rounded-lg text-white font-medium py-2 my-2 absolute bottom-0 ' onClick={() => addList(studyTime)}>Add to Reading list</button>
+            <button className='w-[90%] mx-auto my-2 bg-cyan-400 rounded-lg text-white font-medium py-2 absolute bottom-0 ' onClick={() => addList(studyTime)}>Add to Reading list</button>
         </div>
     );
 };
