@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import img from '../img/my-pic.JPG'
+import img from '../img/my-pic.JPG';
+import App from '../toast/Toast';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
@@ -56,7 +57,7 @@ const List = ({ subjects, time }) => {
             <p className='font-medium'>Break time </p>
             <p className='text-slate-500'>{breakTime} min</p>
         </div>
-        <button className='w-full bg-cyan-400 rounded-lg text-white font-medium p-3 mt-4'>Activity Complated</button>
+        <App></App>
     </aside>
     );
 };
